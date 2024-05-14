@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
+
 import App from './App.tsx';
+// Esta marcando erro de importação porém esta correto, esta funcionando
+import Home from "./pages/Home";
+import Movie from "./pages/Movie";
+import Search from "./pages/Search";
+
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -16,4 +22,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
-)
+);  
