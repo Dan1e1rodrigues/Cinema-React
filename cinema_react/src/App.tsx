@@ -8,7 +8,7 @@ function App() {
     <>
       <div className='App'>
           <Navbar />
-          <h2>Cinema do DanDan</h2>
+          <h2>Cinema dos Crias</h2>
           <Outlet/>
       </div>
     </>
