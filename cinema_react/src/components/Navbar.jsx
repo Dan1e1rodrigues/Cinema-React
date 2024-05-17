@@ -8,14 +8,18 @@ const Navbar = () => {
         <nav id="navbar">
         <h2>
             {/*Pegar o icone que eu achar mais da preferencia*/}
-          <Link to="/"><BiCameraMovie />MovieDn</Link>
+          <Link to="/"><BiCameraMovie />Cinema do DanDan</Link>
         </h2>
         <form>
             <input type="text" placeholder="Busque um filme" />
             <button type="submit">
                 <BiSearchAlt2/>
             </button>
+
+            <button className="loginA">Login</button>
+            <button>Cadastro</button>
         </form>
+
       </nav>
     );
 };

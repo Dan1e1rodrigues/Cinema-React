@@ -14,7 +14,7 @@
 
 #navbar form {
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
 #navbar input {
@@ -39,4 +39,8 @@
 #navbar form button:houver {
     background-color: transparent;
     color: #f7d354;
+}
+
+.login{
+    color: #fff;
 }
