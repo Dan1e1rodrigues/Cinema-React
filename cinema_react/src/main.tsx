@@ -9,7 +9,7 @@ import Movie from "./pages/Movie";
 import Search from "./pages/Search";
 
 import Login from './components/Login';
-import Signup from './components/Signup'; // Novo componente de cadastro
+import Signup from './components/Signup'; 
 
 import './index.css';
 
@@ -22,8 +22,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="movie/:id" element={<Movie />} />
           <Route path="search" element={<Search />} />
 
-          {/* Login & Cadastro */}
-          {/* <Route path="login" element={<Login />} /> */}
+          {/* <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
