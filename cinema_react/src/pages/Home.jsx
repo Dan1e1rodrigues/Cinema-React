@@ -26,7 +26,7 @@ const Home = () => {
 
     return (
     <div className="container">
-        <h2 className="title">Os Melhores Filmes</h2>
+        <h2 className="title">Mais Procurados</h2>
         <div className="movies-container">
             {topMovies.length === 0 && <p>Buscando...</p>}
             {topMovies.length > 0 &&

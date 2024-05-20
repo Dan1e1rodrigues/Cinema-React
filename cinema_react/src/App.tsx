@@ -8,8 +8,7 @@ function App() {
     <>
       <div className='App'>
           <Navbar />
-            {/* <h2>Cinema dos Crias</h2>
-            <p>Ester filmes</p> */}
+            
           <Outlet/>
       </div>
     </>

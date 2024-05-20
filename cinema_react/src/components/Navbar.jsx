@@ -1,45 +1,51 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { BiCameraMovie, BiSearchAlt2 } from "react-icons/bi";
-
 import "./Navbar.css";
 
 const Navbar = () => {
-    const [search, setSearch] = useState("");
-    const navigate = useNavigate();
+  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      
-      if(!search) return;
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-      navigate(`/search?q=${search}`);
-      setSearch("");
-    }
+    if (!search) return;
 
-    return (
-        <nav id="navbar">
-        <h2>
-            {/*Pegar o icone que eu achar mais da preferencia*/}
-          <Link to="/"><BiCameraMovie />Cinema do DanDan</Link>
-        </h2>
-        <form onSubmit={handleSubmit}>
+    navigate(`/search?q=${search}`);
+    setSearch("");
+  };
 
-            <input type="text" placeholder="Busque um filme"
-             onChange={(e) => setSearch(e.target.value)}
-             value={search}
-             />
+  const handleLoginClick = () => {
+    navigate('/login');
+  };
 
-            <button type="submit">
-                <BiSearchAlt2/>
-            </button>
+  const handleSignupClick = () => {
+    navigate('/signup');
+  };
 
-            <button className="loginA">Login</button>
-            <button>Cadastro</button>
-        </form>
-
-      </nav>
-    );
+  return (
+    <nav id="navbar">
+      <h2>
+        <Link to="/"><BiCameraMovie />Cinema do DanDan</Link>
+      </h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Busque um filme"
+          onChange={(e) => setSearch(e.target.value)}
+          value={search}
+        />
+        <button type="submit">
+          <BiSearchAlt2 />
+        </button>
+      </form>
+      <div>
+        <button className="login-btn" onClick={handleLoginClick}>Login</button>
+        <button className="signup-btn" onClick={handleSignupClick}>Cadastro</button>
+      </div>
+    </nav>
+  );
 };
 
-export default Navbar
+export default Navbar;
