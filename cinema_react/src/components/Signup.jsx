@@ -39,6 +39,11 @@ const Signup = () => {
           required
         />
         <button type="submit" className="button">Register</button>
+
+        <div className='CadastroLog'>
+          <p>Caso ainda já possua uma conta, login</p>
+        </div>
+
       </form>
     </div>
   );

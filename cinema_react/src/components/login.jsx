@@ -37,6 +37,10 @@ const Login = () => {
           className="input"
         />
         <button type="submit" className="button">Login</button>
+
+        <div className='CadastroLog'>
+          <p>Caso ainda não possua ua conta, cadastro</p>
+        </div>
       </form>
     </div>
   );
