@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import authService from '../services/authService';
+import './LoginStyle.css'; // Importando o arquivo de estilo CSS
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -18,22 +19,24 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form">
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="input"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="input"
         />
-        <button type="submit">Login</button>
+        <button type="submit" className="button">Login</button>
       </form>
     </div>
   );
