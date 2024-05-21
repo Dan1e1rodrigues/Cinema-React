@@ -8,8 +8,9 @@ import Home from "./pages/Home";
 import Movie from "./pages/Movie";
 import Search from "./pages/Search";
 
-import Login from './components/Login';
-import Signup from './components/Signup'; 
+// Login e cadastro
+import Login from './components/Login.jsx';
+import Signup from './components/Signup.jsx';
 
 import './index.css';
 
@@ -22,7 +23,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="movie/:id" element={<Movie />} />
           <Route path="search" element={<Search />} />
 
-          
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
         </Route>
       </Routes>
     </BrowserRouter>
