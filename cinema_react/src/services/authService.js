@@ -26,10 +26,11 @@ const authService = {
       throw new Error('Invalid credentials');
     }
 
-    localStorage.setItem('user', JSON.stringify({ email }));
+    //localStorage.setItem('user', JSON.stringify({ email }));
+    localService.setItem('user', JSON.stringify({ email }))
   },
   logout: () => {
-    localStorage.removeItem('user');
+    localService.removeItem('user');
   },
   getUser: () => {
     return JSON.parse(localStorage.getItem('user'));

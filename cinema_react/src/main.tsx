@@ -14,6 +14,13 @@ import Signup from './components/Signup.jsx';
 
 import './index.css';
 
+const Private = ({ Item }) => {
+  const { signed } = useAuth();
+
+  return signed > 0 ? <Item /> : <Signin />;
+};
+
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
