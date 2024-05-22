@@ -38,10 +38,10 @@ const Signup = () => {
           className="input"
           required
         />
-        <button type="submit" className="button">Register</button>
+        <button type="submit" className="button">Faça o Seu Cadastro</button>
 
         <div className='CadastroLog'>
-          <p>Caso ainda já possua uma conta, login</p>
+          <p>Caso ainda já possua uma conta, <a href='/Login'>login</a></p>
         </div>
 
       </form>

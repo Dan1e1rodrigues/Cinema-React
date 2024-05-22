@@ -39,9 +39,10 @@ const Login = () => {
         <button type="submit" className="button">Login</button>
 
         <div className='CadastroLog'>
-          <p>Caso ainda não possua ua conta,  cadastro</p>
+          {/*  */}
+          <p>Caso ainda não possua ua conta, <a href='/Signup'>cadastro</a></p>
         </div>
-        
+
       </form>
     </div>
   );
